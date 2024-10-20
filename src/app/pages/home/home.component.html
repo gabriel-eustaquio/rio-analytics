@@ -1,0 +1,52 @@
+<app-header></app-header>
+
+<main class="container">
+  <h1>Consumo de dados de um Json Estático (uso de table)</h1>
+  <table>
+    <tr>
+      <td>Nome do país</td>
+      <td>Capital</td>
+      <td>Região</td>
+      <td>População</td>
+      <td>Bandeira</td>
+    </tr>
+
+    @for (item of dataJson(); track item) {
+    <tr>
+      <td>{{ item.name.common }}</td>
+      <td>{{ item.capital}}</td>
+      <td>{{ item.region}}</td>
+      <td>{{ item.population}}</td>
+      <td><img src="{{ item.flags.png}}" alt="Bandeira do {{ item.name.common }}" width="40"></td>
+    </tr>
+    }
+  </table>
+
+  <h1>Uso de chart.js</h1>
+  <app-chart></app-chart>
+
+  <h1>Uso da API</h1>
+  <div>
+    <table>
+      <tr>
+        <td>Nome do país</td>
+        <td>Capital</td>
+        <td>Região</td>
+        <td>População</td>
+        <td>Bandeira</td>
+      </tr>
+
+      @for (item of dataJsonApi(); track item) {
+      <tr>
+        <td>{{ item.name.common }}</td>
+        <td>{{ item.capital}}</td>
+        <td>{{ item.region}}</td>
+        <td>{{ item.population}}</td>
+        <td><img src="{{ item.flags.png}}" alt="Bandeira do {{ item.name.common }}" width="40"></td>
+      </tr>
+      }
+    </table>
+  </div>
+</main>
+
+<app-footer></app-footer>

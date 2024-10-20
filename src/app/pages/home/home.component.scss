@@ -1,0 +1,36 @@
+h1 {
+  margin-top: var(--espaco-40);
+  margin-bottom: var(--espaco-8);
+}
+
+table {
+  width: calc(100% - var(--espaco-20));
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: var(--espaco-80);
+
+
+  tr:first-child {
+    background-color: var(--cor-s1);
+    td {
+      padding: var(--espaco-16);
+
+      @media screen and (max-width: 700px) {
+        padding: var(--espaco-8) 0px;
+      }
+    }
+  }
+
+  tr:not(:first-child) {
+    background-color: var(--cor-b3);
+  }
+
+}
+
+div {
+  overflow-x: auto;
+
+  table {
+    padding: 0px;
+  }
+}

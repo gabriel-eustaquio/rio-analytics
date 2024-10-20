@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --cor-b1: #F5F7FA;
+  --cor-b2: #E6EAF0;
+  --cor-b3: #CED3D9;
+  --cor-b4: #C0C5CC;
+  --cor-b5: #B2B8BF;
+  --cor-b6: #989EA6;
+  --cor-b7: #7E838C;
+  --cor-b8: #636973;
+  --cor-b9: #474D59;
+  --cor-p1: #80BBFF;
+  --cor-p2: #4C9EFC;
+  --cor-p3: #328FFA;
+  --cor-p4: #1D80F2;
+  --cor-p5: #0E73E8;
+  --cor-p6: #0461CC;
+  --cor-p7: #004799;
+  --cor-s1: #FA9257;
+  --cor-s2: #E57F45;
+  --cor-s3: #D67036;
+  --cor-s4: #CC6227;
+  --cor-s5: #BF5215;
+  --cor-s6: #B2470A;
+  --espaco-4: 0.25rem;
+  --espaco-8: 0.5rem;
+  --espaco-16: 1rem;
+  --espaco-20: 1.25rem;
+  --espaco-24: 1.5rem;
+  --espaco-32: 2rem;
+  --espaco-36: 2.25rem;
+  --espaco-40: 2.5rem;
+  --espaco-48: 3rem;
+  --espaco-60: 3.75rem;
+  --espaco-72: 4.5rem;
+  --espaco-80: 5rem;
+  --espaco-120: 7.5rem;
+  --espaco-160: 10rem;
+}
+
+body, h1 {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: var(--cor-b8);
+  color: var(--cor-b1);
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: var(--espaco-20);
+
+  @media screen and (max-width: 700px) {
+    padding: var(--espaco-8);
+  }
+}

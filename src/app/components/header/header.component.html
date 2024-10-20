@@ -1,0 +1,11 @@
+<header class="container">
+  <h1>Rio<span>Analytics</span></h1>
+  <app-button-menu></app-button-menu>
+  <nav>
+    <ul [ngClass]="{'active': menu, 'non-active': !menu}">
+      <li><a routerLink="/" (click)="toggleMenu()">Home</a></li>
+      <li><a routerLink="/about" (click)="toggleMenu()">Sobre</a></li>
+    </ul>
+  </nav>
+  <app-button-theme></app-button-theme>
+</header>
